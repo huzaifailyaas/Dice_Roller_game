@@ -19,7 +19,6 @@ class _DiceRollerState extends State<DiceRoller> {
       // Randomly choose an alignment: left or right.
       _alignment = Random().nextBool() ? Alignment.centerLeft : Alignment.centerRight;
     });
-    print("Dice rolled to $diceNumber");
 
     // Return the dice image to the center after a short delay.
     Future.delayed(const Duration(milliseconds: 300), () {
